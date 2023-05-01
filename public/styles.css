@@ -314,7 +314,7 @@ register form
   bottom: 0;
   width: 100%;
   height: 100%;
-  visibility: hidden;
+  display: none;
   transition: var(--transition);
 }
 .reg-form-group {
@@ -333,7 +333,7 @@ register form
  position: relative;
 }
 .hide{
-  opacity: 0;
+  display:none;
 }
 
 .times {
@@ -369,7 +369,7 @@ register form
   font-weight: 600;
 }
 .show-register {
-  visibility: visible;
+  display: block;
 }
 
 .reg-alert, .login-alert {
