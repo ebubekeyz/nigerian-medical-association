@@ -266,6 +266,13 @@ Countdown Timer
   justify-content: center;
   place-items: center;
   margin-top: 2rem;
+  display: none;
+}
+
+@media screen and (min-width: 800px){
+  .gift-info {
+    display: block;
+  }
 }
 .gift-info h4 {
   color: var(--clr-grey-8);
@@ -310,8 +317,6 @@ register form
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
   width: 100vw;
   height: 100vh;
   display: none;
