@@ -156,7 +156,7 @@ banner
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('./banner.jpg') center/cover no-repeat fixed;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
 }
 .banner-info{
     position: absolute;
@@ -307,13 +307,13 @@ register form
 */
 .reg-form-section {
   background: rgba(0, 0, 0, 0.5);
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: none;
   transition: var(--transition);
 }
