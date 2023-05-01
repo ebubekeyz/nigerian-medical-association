@@ -105,7 +105,7 @@ const times = document.querySelector('.times')
 const regFormSection = document.querySelector('.reg-form-section')
 
 times.addEventListener('click',()=>{
-  regFormSection.classList.toggle('hide')
+  regFormSection.style.display = 'none'
 })
 
 
