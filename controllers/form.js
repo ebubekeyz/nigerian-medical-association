@@ -1,5 +1,5 @@
 const { UnauthenticatedError, BadRequestError, NotFoundError } = require('../errors')
-const Form = require('../models/form')
+const Form = require('../models/Form')
 const {StatusCodes} = require('http-status-codes')
 const nodemailer = require('nodemailer')
 
