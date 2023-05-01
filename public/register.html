@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+</head>
+<body>
+    <section class="banner section">
+        <div class="banner-center section-center">
+
+            <!-- register -->
+            <div class="reg-form-section" style="visibility: visible; padding: 7rem 0;">
+                <div class="reg-form-center" style="padding-top: 3rem; padding-bottom: 3rem;">
+
+                <form action="/login">
+                    <div class="form-header">
+                    <h3>Register</h3>
+                    <h4 class="reg-alert"></h4>
+                    </div>
+
+                    <div class="name">
+                        <label for="name" class="reg-label">Name</label>
+                        <input type="text" placeholder="Name" class="reg-form-group" id="name">
+                    </div>
+      
+                    <div class="email">
+                        <label for="email" class="reg-label">Email</label>
+                        <input type="text" placeholder="Email" class="reg-form-group" id="email">
+                    </div>
+                    
+                    <div class="password">
+                        <label for="password" class="reg-label">Password</label>
+                        <input type="password" placeholder="" class="reg-form-group" id="password">
+                    </div>
+                     
+                    <div>
+                        <input type="submit" value="register" class="reg-submit btn">
+                    </div>
+                </form>
+                </div>
+               </div>
+  
+
+            </div>
+        </div>
+      </section>
+
+      <!-- axios -->
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+    ></script>
+  
+    
+  
+  
+    <script src="./register.js"></script>
+    
+  </body>
+  </html>
