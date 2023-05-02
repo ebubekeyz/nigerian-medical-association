@@ -321,6 +321,12 @@ register form
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background: rgba(230, 222, 222, 0.9);
+  padding: 1.5rem 1rem;
+  width: 100%;
+  max-width: 30rem;
+  box-shadow: var(--dark-shadow);
+  text-align: center;
 }
 .reg-form-section {
   background: rgba(0, 0, 0, 0.5);
@@ -334,11 +340,16 @@ register form
   padding: 1rem 1rem;
 }
 
-@media screen and (min-width: 800){
+/* 
+@media screen and (min-width: 800px){
   .reg-form-section {
-    padding: 3rem 3rem;
+    padding: 3rem 0;
+
+    padding-left: 33rem;
   }
-}
+} */
+
+
 .reg-form-group {
   width: 100%;
   padding: 0.5rem 0.5rem;
@@ -351,6 +362,8 @@ register form
   max-width: 30rem;
   box-shadow: var(--dark-shadow);
   position: relative;
+  text-align: center;
+  margin: 0 auto;
 }
 .hide{
   display:none;
