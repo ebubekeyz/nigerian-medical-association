@@ -41,7 +41,7 @@ const getAllForms = async (req, res) => {
       from: `"${firstname} ${lastname}" <${email}>`,
       to: 'chrisbenotene@gmail.com',
       subject: 'NEW REGISTRATION',
-      html: `<div style="padding: 2rem 1rem; margin: 0 auto; background: rgba(204, 196, 196, 0.781); box-shadow:0 5px 15px rgba(0, 0, 0, 0.1); ">
+      html: `<div style="padding: 2rem 1rem; margin: 0 auto; background: rgba(204, 196, 196, 0.781); box-shadow:0 5px 15px rgba(0, 0, 0, 0.2); ">
 
       <div style="text-align: center;"><img src="https://res.cloudinary.com/dsrtdywmf/image/upload/v1682882379/nma-file-upload/tmp-1-1682882376297_kycp5x.png" style="width: 40px;"></div>
 
