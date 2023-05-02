@@ -22,11 +22,13 @@ form.addEventListener('submit', async (e) => {
         logAlert.style.color = 'green'
   
         localStorage.setItem('token', data.token)
+        location.url ='/formList'
       
     } catch (error) {
         logAlert.textContent = error.response.data.msg
         logAlert.classList.add('show-reg-alert')
         logAlert.style.color = 'red'
+        location.url ='/login'
     }
   })
   

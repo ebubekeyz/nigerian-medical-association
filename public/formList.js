@@ -22,7 +22,7 @@ const fetchList = async () => {
       tr.classList.add('list-info')
       tr.innerHTML = `
       <td>${id}</td>
-      <td style="text-transform: capitalize;"><strong>${title}</strong><a href="./singleList?id=${formId}"> ${firstname} ${lastname}</a></td>
+      <td style="text-transform: capitalize;">${title}<a href="./singleList?id=${formId}"> ${firstname} ${lastname}</a></td>
       <td class="hide-small-screen">${email}</td>
       <td class="hide-small-screen" style="text-transform: capitalize;">${designation}</td>
       <td class="hide-small-screen">${phone}</td>
