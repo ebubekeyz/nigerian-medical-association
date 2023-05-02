@@ -23,15 +23,14 @@ regSubmit.addEventListener('click', async(e) => {
         regAlert.classList.add('show-reg-alert')
         regAlert.style.color = 'green'
         
-        location.url ='/login'
+        
     }
     catch(error){
         console.log(error)
         regAlert.textContent = error.response.data.msg
         regAlert.classList.add('show-reg-alert')
         regAlert.style.color = 'red'
-        location.url ='/register'
-
+        
     }
 })
 

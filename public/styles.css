@@ -324,7 +324,7 @@ register form
   transform: translate(-50%, -50%);
   background: rgba(230, 222, 222, 0.9);
   padding: 1.5rem 1rem;
-  width: 100%;
+  width: 90%;
   max-width: 30rem;
   box-shadow: var(--dark-shadow);
   border-radius: var(--radius);
