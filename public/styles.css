@@ -452,6 +452,7 @@ formList
 
 table {
   margin: 0 auto;
+  width: 100%;
  
 }
 
@@ -470,15 +471,14 @@ td {
  padding: 0.5rem 0.2rem;
 }
 td a {
-  color: rgba(128, 37, 9, 0.9);
+  color: rgba(36, 14, 235, 0.9);
 }
 
 tr{
   cursor: pointer;
-  transition: var(--transition);
 }
 
-tr:hover {
+td:hover {
   background: rgba(0, 0, 0, 0.5);
   color: white;
 }
@@ -494,15 +494,15 @@ tr:hover {
 
 .list-center {
   background: rgba(204, 196, 196, 0.781);
-  padding: 4rem 4rem;
+  padding: 4rem 1rem;
 }
 
 .hide-small-screen {
   display: none;
 }
-@media screen and(min-width: 800){
+@media screen and(min-width: 400){
   .hide-small-screen {
-    display: block;
+    
   }
 }
 .list-section {
