@@ -487,6 +487,7 @@ th {
 td {
   text-align: center;
  padding: 0.5rem 0.2rem;
+ cursor: pointer;
 }
 td a {
   color: black
@@ -496,10 +497,6 @@ tr{
   cursor: pointer;
 }
 
-td:hover {
-  background: rgba(26, 61, 13, 0.8);
-  color: white;
-}
 
 .list-img-logo {
   text-align: center;
@@ -518,11 +515,7 @@ td:hover {
 .hide-small-screen {
   display: none;
 }
-@media screen and(min-width: 400){
-  .hide-small-screen {
-    
-  }
-}
+
 .list-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('./banner.jpg') center/cover no-repeat;
   width: 100%;
