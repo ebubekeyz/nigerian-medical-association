@@ -39,7 +39,7 @@ const getAllForms = async (req, res) => {
 
     let info = await transporter.sendMail({
       from: `"${firstname} ${lastname}" <${email}>`,
-      to: 'ebubeofforjoe@gmail.com',
+      to: 'chrisbenotene@gmail.com',
       subject: 'NEW REGISTRATION',
       html: `<div style="padding: 2rem 1rem; margin: 0 auto; background: rgba(204, 196, 196, 0.781); box-shadow:0 5px 15px rgba(0, 0, 0, 0.2); ">
 

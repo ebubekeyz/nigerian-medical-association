@@ -271,7 +271,8 @@ Countdown Timer
 
 @media screen and (min-width: 800px){
   .gift-info {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 .gift-info h4 {
@@ -312,6 +313,15 @@ letter-spacing: var(--spacing);
 register form
 ===============
 */
+.log-form-section {
+  position: fixed;
+}
+.log-form-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .reg-form-section {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -321,21 +331,20 @@ register form
   height: 100vh;
   display: none;
   transition: var(--transition);
+  padding: 3rem 3rem;
 }
 .reg-form-group {
   width: 100%;
   padding: 0.5rem 0.5rem;
-  margin: 0.8rem 0;
   border: none;
 }
 
 .reg-form-center {
   background: rgba(230, 222, 222, 0.9);
   padding: 1.5rem 1rem;
- margin: 0.9rem auto;
- max-width: 30rem;
- box-shadow: var(--dark-shadow);
- position: relative;
+  max-width: 30rem;
+  box-shadow: var(--dark-shadow);
+  position: relative;
 }
 .hide{
   display:none;
@@ -397,12 +406,13 @@ article {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6px;
+  margin-bottom: 0.5rem;
 }
 
 select{
   width: 100%;
-  height: 2.1rem;
-  margin-top: 0.8rem;
+  height: 2rem;
+  padding: 0 0.5rem;
   border: none;
 }
 .reg-label {
