@@ -24,10 +24,10 @@ const fetchList = async () => {
       <td>${id}</td>
       <td style="text-transform: capitalize;"><strong>${title}</strong><a href="./singleList?id=${formId}"> ${firstname} ${lastname}</a></td>
       <td class="hide-small-screen">${email}</td>
-      <td style="text-transform: capitalize;">${designation}</td>
+      <td class="hide-small-screen" style="text-transform: capitalize;">${designation}</td>
       <td class="hide-small-screen">${phone}</td>
       <td class="hide-small-screen" style="text-transform: capitalize;">${state}/${country}</td>
-      <td>${specialty}</td>
+      <td class="hide-small-screen">${specialty}</td>
       <td class="hide-small-screen">${participant}</td>
       <td class="hide-small-screen">N${amount}</td>
       <td style="border: 1px solid black; padding: 1rem 1rem;"> <a href="${image}"><img src="${image}" style="width: 25px; height: 25px; object-fit: cover"></a></td>
