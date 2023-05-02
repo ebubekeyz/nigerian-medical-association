@@ -333,6 +333,12 @@ register form
   transition: var(--transition);
   padding: 1rem 1rem;
 }
+
+@media screen and (min-width: 800){
+  .reg-form-section {
+    padding: 3rem 3rem;
+  }
+}
 .reg-form-group {
   width: 100%;
   padding: 0.5rem 0.5rem;
