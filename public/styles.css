@@ -331,7 +331,7 @@ register form
   height: 100vh;
   display: none;
   transition: var(--transition);
-  padding: 3rem 3rem;
+  padding: 1rem 1rem;
 }
 .reg-form-group {
   width: 100%;
