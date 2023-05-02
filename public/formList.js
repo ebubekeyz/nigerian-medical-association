@@ -23,13 +23,13 @@ const fetchList = async () => {
       tr.innerHTML = `
       <td>${id}</td>
       <td style="text-transform: capitalize;"><strong>${title}</strong><a href="./singleList?id=${formId}"> ${firstname} ${lastname}</a></td>
-      <td>${email}</td>
+      <td class="hide-small-screen">${email}</td>
       <td style="text-transform: capitalize;">${designation}</td>
-      <td>${phone}</td>
-      <td style="text-transform: capitalize;">${state}/${country}</td>
+      <td class="hide-small-screen">${phone}</td>
+      <td class="hide-small-screen" style="text-transform: capitalize;">${state}/${country}</td>
       <td>${specialty}</td>
-      <td>${participant}</td>
-      <td>N${amount}</td>
+      <td class="hide-small-screen">${participant}</td>
+      <td class="hide-small-screen">N${amount}</td>
       <td style="border: 1px solid black; padding: 1rem 1rem;"> <a href="${image}"><img src="${image}" style="width: 25px; height: 25px; object-fit: cover"></a></td>
       `
       result.appendChild(tr)

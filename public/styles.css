@@ -495,13 +495,20 @@ tr:hover {
 .list-center {
   background: rgba(204, 196, 196, 0.781);
   padding: 4rem 4rem;
-  display: none;
 }
 
+.hide-small-screen {
+  display: none;
+}
+@media screen and(min-width: 800){
+  .hide-small-screen {
+    display: block;
+  }
+}
 .list-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('./banner.jpg') center/cover no-repeat;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .switch {
@@ -514,6 +521,7 @@ tr:hover {
   place-items: center;
   background: rgba(204, 196, 196, 0.781);
   box-shadow: var(--dark-shadow);
+  display: none;
 }
 .switch p {
   font-size: 2rem;
