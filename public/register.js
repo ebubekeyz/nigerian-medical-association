@@ -5,14 +5,22 @@ const regSubmit = document.querySelector('.reg-submit')
 const regAlert = document.querySelector('.reg-alert')
 
 regSubmit.addEventListener('click', async(e) => {
-    
+    e.preventDefault()
     const name = nameInput.value
     const email = emailInput.value
     const password = passwordInput.value
 
     try{
         regSubmit.value = `registering...`
-        await axios.post('/api/v1/auth/register', {name, email, password})
+        const {data} = await axios.post('/api/v1/auth/register', {name, email, password}).then((response) => {
+            if(response){
+                window.location = '/login'
+            }
+        }).catch((error) => {
+            console.log(error)
+            logAlert.textContent = error.response.data.msg
+            window.location = "/register"
+        })
 
         regSubmit.value = `successfully registered`
 

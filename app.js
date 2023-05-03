@@ -21,6 +21,7 @@ cloudinary.config({
   api_secret: process.env.CLOUD_SECRET
 })
 
+const authenticationRouter = require('./middleware/authentication')
 // routers
 const authRouter = require('./routes/auth');
 const formRouter = require('./routes/form');
